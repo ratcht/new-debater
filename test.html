@@ -1,0 +1,140 @@
+ <!--Top Example-->
+ <div>
+ <main>
+    <div id="sad"> <p></p></div>
+    <div ><img id="presidentImage" src="trump.jpg"/></div>
+    <div id="confused"><p></p></div>
+ </main>
+<main>
+    <div id="happy"><p></p></div>
+    <div id="sad">
+        <video muted autoplay>
+            <source src="your-video.mp4" type="video/mp4">
+            <!-- Add additional sources for different formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+     </div>
+    <div id="confused"><p></p></div> 
+ </main>
+     <audio  allow="autoplay" autoplay id="audio" controls src="audio1.wav"/></audio>
+     <script src="test.js"></script>
+<style>
+    main{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    text-align: center; 
+}
+
+
+#happy{
+    flex-grow:1;
+    
+}
+
+#sad{
+    flex-grow:1;
+    
+}
+
+#confused{
+    flex-grow: 1;
+}
+
+#happy,#sad,#confused{
+    height:350px;
+
+    
+}
+
+#presidentImage{
+    flex-grow: 1;
+    max-width: 600px;
+    max-height: 400px;
+
+}
+
+
+/*next line*/
+
+article{
+    display:flex;
+    flex-direction:row;
+    text-align: center;  
+}
+/*adding article is not necessary, but could be more informative.*/
+
+article a#cool{
+   
+    flex-grow: 1; 
+}
+
+article a#warm{
+   
+    flex-grow: 1; 
+}
+
+article a#hot{
+
+    flex-grow: 1; 
+}
+
+
+/* Video Source: https://www.videezy.com */
+/* Audio Source: https://freemusicarchive.org */
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+
+.bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Sofia Sans', sans-serif;
+  line-height: 1.5;
+  background-color: #000000;
+}
+
+.content {
+  position: relative;
+  top: 30%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.content__heading {
+  margin-bottom: 24px;
+  color: #FFFFFF;
+  font-size: 44px;
+}
+
+.content__teaser {
+  margin-bottom: 24px;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+.content__cta {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 48px;
+  color: #FFFF88;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 4px #FFFF88;
+}
+</style>
+</div>
